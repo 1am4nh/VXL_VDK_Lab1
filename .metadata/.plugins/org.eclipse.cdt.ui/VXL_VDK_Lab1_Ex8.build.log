@@ -1,0 +1,22 @@
+03:12:24 **** Incremental Build of configuration Debug for project VXL_VDK_Lab1_Ex8 ****
+make -j12 all 
+arm-none-eabi-gcc -o "VXL_VDK_Lab1_Ex8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\ADMIN\Documents\Study\VXL-VDK\VXL_VDK_Lab1\Lab1-Ex8\STM32\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="VXL_VDK_Lab1_Ex8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: VXL_VDK_Lab1_Ex8.elf
+ 
+arm-none-eabi-size   VXL_VDK_Lab1_Ex8.elf 
+arm-none-eabi-objdump -h -S  VXL_VDK_Lab1_Ex8.elf  > "VXL_VDK_Lab1_Ex8.list"
+arm-none-eabi-objcopy  -O ihex  VXL_VDK_Lab1_Ex8.elf  "VXL_VDK_Lab1_Ex8.hex"
+arm-none-eabi-objcopy  -O binary  VXL_VDK_Lab1_Ex8.elf  "VXL_VDK_Lab1_Ex8.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4460	     20	   1572	   6052	   17a4	VXL_VDK_Lab1_Ex8.elf
+Finished building: default.size.stdout
+ 
+Finished building: VXL_VDK_Lab1_Ex8.hex
+Finished building: VXL_VDK_Lab1_Ex8.bin
+ 
+Finished building: VXL_VDK_Lab1_Ex8.list
+ 
+ 
+
+03:12:24 Build Finished. 0 errors, 0 warnings. (took 386ms)
+
